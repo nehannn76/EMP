@@ -5,7 +5,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<div>Hello World</div>
-<a href="registration">Registration</a>
+<div>Hello Service is running in the background..........</div>
 </body>
 </html>
