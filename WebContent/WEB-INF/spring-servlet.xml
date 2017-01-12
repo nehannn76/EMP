@@ -28,24 +28,15 @@
 		<property name="password" value="" />
 	</bean> -->
 	 
-	 
-	<!--  <bean id="dataSrc" class="org.apache.commons.dbcp2.BasicDataSource"
+	  <bean id="dataSrc" class="org.apache.commons.dbcp2.BasicDataSource"
 		destroy-method="close">
-		  <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
 		<property name="url"
-			value="jdbc:mysql://${env.MYSQL_SERVICE_HOST}:${env.MYSQL_SERVICE_PORT}/${env.MYSQL_DATABASE}" />
-		<property name="username" value="${env.MYSQL_USER}" />
-		<property name="password" value="${env.MYSQL_PASSWORD}" />
-	</bean> -->
-	
-	<bean id="dataSrc" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" destroy-method="close">
- 	 <property name="searchSystemEnvironment" value="true" />
-		 <property name="driverClassName" value="com.mysql.jdbc.Driver" />
-		<property name="url"
-			value="jdbc:${MYSQL_URL}" />
-		<property name="username" value="${MYSQL_USER}" />
-		<property name="password" value="${MYSQL_PASSWORD}" />
+			value="jdbc:mysql://172.30.156.4:3306/sampledb" />
+		<property name="username" value="admin" />
+		<property name="password" value="root" />
 	</bean>
+
 	
 	<!-- <mvc:resources mapping="/resources/**" location="/resources/theme1/" cache-period="31556926"/> -->
         
