@@ -42,7 +42,7 @@
  	 <property name="searchSystemEnvironment" value="true" />
 		 <property name="driverClassName" value="com.mysql.jdbc.Driver" />
 		<property name="url"
-			value="${MYSQL_URL}" />
+			value="jdbc:${MYSQL_URL}" />
 		<property name="username" value="${MYSQL_USER}" />
 		<property name="password" value="${MYSQL_PASSWORD}" />
 	</bean>
