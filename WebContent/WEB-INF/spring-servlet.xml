@@ -42,9 +42,9 @@
  	 <property name="searchSystemEnvironment" value="true" />
 		 <property name="driverClassName" value="com.mysql.jdbc.Driver" />
 		<property name="url"
-			value="${env.MYSQL_URL}" />
-		<property name="username" value="${env.MYSQL_USER}" />
-		<property name="password" value="${env.MYSQL_PASSWORD}" />
+			value="${MYSQL_URL}" />
+		<property name="username" value="${MYSQL_USER}" />
+		<property name="password" value="${MYSQL_PASSWORD}" />
 	</bean>
 	
 	<!-- <mvc:resources mapping="/resources/**" location="/resources/theme1/" cache-period="31556926"/> -->
