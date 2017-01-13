@@ -32,10 +32,10 @@
 		destroy-method="close">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
 		<property name="url"
-			value="jdbc:mysql://${O_MYSQL_SERVICE_HOST}:${O_MYSQL_SERVICE_PORT}/${O_MYSQL_DATABASE}" />
+			value="jdbc:mysql://${env.O_MYSQL_SERVICE_HOST}:${env.O_MYSQL_SERVICE_PORT}/${env.O_MYSQL_DATABASE}" />
 
-		<property name="username" value="${O_MYSQL_USER}" />
-		<property name="password" value="${O_MYSQL_PASSWORD}" /> 
+		<property name="username" value="${env.O_MYSQL_USER}" />
+		<property name="password" value="${env.O_MYSQL_PASSWORD}" /> 
 	</bean>
 
 	
