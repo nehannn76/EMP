@@ -29,16 +29,13 @@
 		<property name="password" value="" />
 	</bean> -->
 	 
-	  <bean id="dataSrc" class="org.apache.commons.dbcp2.BasicDataSource"
+	 <bean id="dataSrc" class="org.apache.commons.dbcp2.BasicDataSource"
 		destroy-method="close">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
 		<property name="url"
-			value="jdbc:mysql://${O_MYSQL_SERVICE_HOST}:${O_MYSQL_SERVICE_PORT}/${O_MYSQL_DATABASE}" />
-                <property name="url"
-			value="jdbc:mysql://172.30.156.4:3306/sampledb" />
-
-		<property name="username" value="${O_MYSQL_USER}" />
-		<property name="password" value="${O_MYSQL_PASSWORD}" /> 
+			value="jdbc:mysql://172.30.254.189:3306/sampledb" />
+		<property name="username" value="admin" />
+		<property name="password" value="root" />
 	</bean>
 
 	
